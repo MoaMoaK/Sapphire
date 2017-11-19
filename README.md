@@ -20,7 +20,7 @@ Simply include this files in your HTML using
 ```HTML
 <script src="/path/to/sapphire.js"> var s=Sapphire(); </script>
 ```
-Then whenever the matrix rain drop needs to be toogle on/off use
+Then whenever the matrix rain drop needs to be toggle on/off use
 `s.activate();`. It will modify some CSS parameters of the bootstrap
 componenents in order to make the background JS canvas where the rain drop is
 drawn visible.
@@ -35,7 +35,7 @@ higher the more tougher for the browser it is. 30 FPS seems to be acceptable.
 is being displayed. *0 = instant disappear*,
 *maximum = window.innerHeight = no disappear at all*
 * **RAIN_COLOR** : The color for the rain drop symbols
-* **CHARACTERS** : The charachters used. Chineses are quite ok.
+* **CHARACTERS** : The characters used. Chineses are quite ok.
 * **FONT_SIZE** : The size used for the characters. The higher, the less
 characters on screen but easier to handle for the browser.
 * **MAX_CHAR** : The number of maximum character per column.
@@ -70,3 +70,6 @@ name_for_elt: {
     revert: function()     { sapphire.revertProp(this); }
 }
 ```
+Once you have added your element to the list of elements with the correct
+functions. Everything should be ok and the new elements should be taken into
+account and modified when toggling the effect.
